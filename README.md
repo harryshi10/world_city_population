@@ -18,5 +18,6 @@ install pandas and beautifulsoup4 if you don't have them in your python environm
 
 # User guide
 set ```CITY_LIST_FILE``` point to your city_list.txt file   
-set ```OUTPUT_FILE``` point to your
+set ```OUTPUT_FILE``` point to your  
+run ```python fetch_city.py```
 
