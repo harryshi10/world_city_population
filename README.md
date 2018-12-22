@@ -1,7 +1,7 @@
 # World_City_Population
 get city and it's country's population via wiki
 
-# Waht it will do
+# What it will do
 give city's population, the country it belongs to and the country's population. Data source is from wiki  
 ![image](http://github.com/harryshi10/world_city_population/raw/master/sample.png)
 
