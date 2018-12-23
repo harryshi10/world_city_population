@@ -6,7 +6,7 @@ give city's population, the country it belongs to and the country's population. 
 ![image](http://github.com/harryshi10/world_city_population/raw/master/sample.png)
 
 
-# Request
+# Dependency
 python 2  
 pandas  
 beautifulsoup4
