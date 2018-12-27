@@ -1,6 +1,458 @@
+Adelaide
+Aguascalientes
+Albuquerque
+Alexandria
+Amsterdam
+Ankara
+Ansan
+Anshan
+Antwerpen
+Arnhem
+Asahikawa
+Asuncion city
+Athens
+Atlanta
+Atlanta_Metro_Test
+Auckland
+Austin
+Bacolod
+Baltimore
+Bangalore
+Bangkok
+Baoding
+Baoji
+Baotou
+Barcelona
+Basel
 Beijing
-Wenzhou
-Suzhou
+Beirut
+Belfast
+Belgrad
+Belo Horizonte
+Benoni
+Berlin
+Bilbao
+Binzhou
+Birmingham
+Bogota
+Bologna
+Bonn
+Bordeaux
+Boston
+Bournemouth
+Bradford
+Brasilia
+Bremen
+Brighton
+Brisbane city
+Bristol
+Brno
+Brussels
+Bucharest
+Bucheon
+Budapest
+Buenos Aires
+Busan
+Cagayan de Oro
+Cairo
+Calgary
+Cali
+Caloocan
+Campinas
+Canberra city
+Cangzhou
+Cape Town
+Cardiff
+Cebu City
+Changchun
+Changde
+Changsha
+Changwon
+Changzhou
+Charleroi
+Charlotte
+Chengdu
+Chennai
+Cheongju
+Chicago
+Chihuahua
+Chongqing
+Christchurch
+Chuncheon
+Cincinnati
+Ciudad Juarez
+Cleveland
+Coimbra
+Cologne
+Columbus
+Coventry
+Daegu
+Daejeon
+Dalian
+Dallas
+Daqing
+Davao
+Delhi
+Denver
+Denver_Metro_Test
+Detroit
+Dezhou
+Doha
+Dongguan
+Dongying
+Dortmund
+Dresden
+Dubai
+Dublin
+Duisburg
+Durban
+Dusseldorf
+Edinburgh
+Edmonton
+Eindhoven
+Essen
+Florence
+Fort Lauderdale
+Fortaleza
+Foshan
+Frankfurt
+Ft. Worth
+Fukuoka
+Fuzhou
+Gangneung
+General Santos
+Geneva
+Gent
+George Town
+Gibraltar
+Gifu
+Glasgow
+Gold Coast
+Goyang
+Grenoble
+Groningen
+Guadalajara
+Guangzhou
+Guatemala City
+Guilin
+Guiyang
+Gunsan
+Gwangju
+Haarlem
+Hachioji
+Haifa
+Haikou
+Halifax
+Hamamatsu
+Hamburg
+Hamilton
+Handan
+Hangzhou
+Hannover
+Harbin
+Hefei
+Heze
+Hiroshima
+Hong Kong
+Houston
+Hsinchu
+Huai'an
+Huhehaote
+Huizhou
+Iksan
+Incheon
+Indianapolis
+Irvine
+Istanbul
+Iwaki
+Jacksonville
+Jakarta
+Jeddah
+Jeju
+Jeonju
+Jerusalem
+Jiangmen
+Jiangyin
+Jiaxing
+Jilin
+Jinan
+Jinhua
+Jining
+Johannesburg
+Kagoshima
+Kanazawa
+Kansas City
+Kaohsiung
+Karachi
+Kaunas
+Kawagoe
+Kawasaki
+Kingston upon Hull
+Kitakyushu
+Kitchener
+Kobe
+Kobenhavn city
+Kochi
+Kolkata
+Kuala Lumpur
+Kumamoto
+Kunming
+Kunshan
+Kyoto
+La Paz
+Lagos
+Lahore
+Langfang
+Lanzhou
+Las vegas
+Lasa
+Leeds
+Leeuwarden
+Leicester
+Leipzig
+Leon
+Liaocheng
+Liege
+Lille
+Lima
+Linyi
+Lisbon
+Liuzhou
+Liverpool
+Ljubljana
+London
+Long Beach
+Los angeles
+Luoyang
+Lyon
+Maastricht
+Madrid
+Maebashi
+Malaga
+Manchester
+Manila
+Mannheim
+Manukau
+Maoming
+Marseille
+Mashhad
+Matsuyama
+Medellin
+Melbourne
+Memphis
+Merida
+Mesa
+Mexicali
+Mexico City
+Miami
+Mianyang
+Middlesbrough
+Milan
+Milwaukee
+Minneapolis
+Minneapolis_StPaul_Metro_Test
+Minsk
+Miyazaki
+Mokpo
+Mombasa
+Monterrey
+Montevideo
+Montreal
+Moscow
+Mumbai
+Munich
+Nagano
+Nagasaki
+Nagoya
+Naha
+Nairobi
+Nanchang
+Nanjing
+Nanning
+Nantes
+Nantong
+Nanyang
+Naples
+Nashville
+New Haven
+New York City
+New_York_City_Metro_Test
+Newcastle
+Newcastle upon Tyne
+Nezahualcoyotl
+Nice
+Niigata
+Ningbo
+Nottingham
+Nuremberg
+Oakland
+Oita
+Okayama
+Ordos
+Orlando
+Osaka
+Oshawa
+Oslo
+Ostrava
+Otsu
+Ottawa
+Palermo
+Paris
+Perth
+Philadelphia
+Phoenix
+Pittsburgh
+Pohang
+Port Elizabeth
+Portland
+Porto
+Porto Alegre
+Portsmouth
+Prague
+Pretoria
+Puebla
 Qingdao
-Xi'an
+Quanzhou
+Quebec
+Queretaro
+Quezon City
+Raleigh
+Recife
+Regina
+Riga
+Rio de Janeiro
+Riyadh
+Rome
+Rotterdam
+s-Hertogenbosch
+Saarbrucken
+Sacramento
+Salvador
+San antonio
+San Bernardino
+San Diego
+San Francisco
+San Jose
+San jose
+San Luis Potosi
+Santa Cruz
+Santiago
+Santiago de Queretaro
+Santo Domingo
+Sao Bernardo do Campo
+Sao Paulo
+Sapporo
+Saskatoon
+Seattle
+Seattle_Metro_Test
+Sendai
+Seongnam
+Seoul
+Seville
+SF_Bay_Area_Test
+Shanghai
+Shaoxing
+Sharjah
+Sheffield
+Shenyang
+Shenzhen
+Shijiazhuang
+Shizuoka
+Singapore
+Sofia
+Southampton
+Southend-on-Sea
+St louis
+St Petersburg
+Stockholm
+Stoke
+Strasbourg
+Stuttgart
+Sunderland
+Suwon
+Suzhou
+Sydney
+Taian
+Taichung
+Tainan
+Taipei
+Taiyuan
+Taizhou
+Takamatsu
+Tampa
+Tangshan
+Tehran
+Tel Aviv-Yafo
+Thane
+The Hague
+Thessaloniki
+Tianjin
+Tijuana
+Tlalnepantla de Baz
+Tokushima
 Tokyo
+Toluca
+Toronto
+Torreon
+Toulouse
+Toyama
+Tsu
+Turin
+Ufa
+Ulsan
+Urumqi
+Utrecht
+Utsunomiya
+Valencia
+Vancouver
+Venice
+Vereeniging
+Victoria
+Vienna
+Vilnius
+Virginia Beach
+Wakayama
+Warsaw
+Washington
+Weifang
+Weihai
+Wellington
+Wenzhou
+Wiesbaden
+Windsor
+Winnipeg
+Wonju
+Wuhan
+Wuhu
+Wuppertal
+Wuxi
+Xi'an
+Xiamen
+Xiangyang
+Xining
+Xuzhou
+Yancheng
+Yangzhou
+Yantai
+Yeosu
+Yichang
+Yinchuan
+Yiwu
+Yokohama
+Yueyang
+Yulin
+Zagreb
+Zamboanga
+Zapopan
+Zaragoza
+Zhangjiagang
+Zhangzhou
+Zhanjiang
+Zhaotong
+Zhengzhou
+Zhenjiang
+Zhongshan
+Zhuhai
+Zibo
+Zurich
+Zwolle

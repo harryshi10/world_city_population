@@ -4,16 +4,31 @@ from requests import get
 from bs4 import BeautifulSoup
 import re
 import logging
+import json
 
 CITY_LIST_FILE = "./city_list.txt"
 OUTPUT_FILE = "./city_output.csv"
 
 
-def get_class_list(url):
+def get_class_list(url, for_what):
     raw_data = get(url)
     soup = BeautifulSoup(raw_data.text, 'html.parser')
-    class_list = soup.findAll(True, {"class": ["mergedtoprow", "mergedrow"]})
-    return class_list
+    if for_what == "pop":
+        class_list = soup.findAll(True, {"class": ["mergedtoprow", "mergedrow"]})
+        return class_list
+    elif for_what == "cord":
+        script_list = soup.find_all("script")
+        return script_list
+
+
+def get_lat_lon(class_list):
+    for body in class_list:
+        if "wgCoordinates" in body.text:        # find cord body
+            cord_str = body.text.split('"wgCoordinates":{')[1].split('}')[0]       # get lat:xxx, long:xxx
+            cord_str = '{' + cord_str + '}'     # to json format
+            lat, lon = json.loads(cord_str)["lat"], json.loads(cord_str)["lon"]
+            return lat, lon
+    raise Exception("no wgCoordinates tag on web")
 
 
 def get_numbers_in_body(body):
@@ -52,7 +67,7 @@ def get_country_name_and_pop(class_list):
                 country_str = str(body.find("td"))
                 country_name = country_str[country_str.index(">")+1: country_str.index("<", 1)]           # fetch country from <td>China</td>
                 url = "https://en.wikipedia.org/wiki/{}".format(country_name)
-            class_list_country = get_class_list(url)
+            class_list_country = get_class_list(url, "pop")
             country_pop = get_pop(class_list_country)
             return country_name, country_pop
     raise Exception("no Country tag on the web")
@@ -66,18 +81,24 @@ if __name__ == "__main__":
         try:
             city_replace = re.search("\w+", city).group() if "city" in city else city     # "xxx city" to "xxx"
             url = "https://en.wikipedia.org/wiki/{}".format(city_replace)
-            class_list = get_class_list(url)
+            class_list = get_class_list(url, "pop")
             city_pop = get_pop(class_list)
-            try:
-                country_name, country_pop = get_country_name_and_pop(class_list)
-            except Exception as e:      # country warning
-                logging.warning("{} happens in the country of {}".format(e, city))
-                country_name, country_pop = None, None
-        except Exception as e:          # city warning
+        except Exception as e:  # city warning
             logging.warning("{} happens in {}".format(e, city))
-            continue
-        result.append((city, city_pop, country_name, country_pop))
-    df = pd.DataFrame(result, columns=["city", "city_pop", "country", "country_pop"])
+            city_pop = None
+        try:
+            script_list = get_class_list(url, "cord")
+            lat, lon = get_lat_lon(script_list)
+        except Exception as e:
+            lat, lon = None, None
+            logging.warning("{} happens in {}".format(e, city))
+        try:
+            country_name, country_pop = get_country_name_and_pop(class_list)
+        except Exception as e:      # country warning
+            logging.warning("{} happens in the country of {}".format(e, city))
+            country_name, country_pop = None, None
+        result.append((city, city_pop, lat, lon, country_name, country_pop))
+    df = pd.DataFrame(result, columns=["city", "city_pop", "lat", "lon", "country", "country_pop"])
     df.to_csv(OUTPUT_FILE, index=False)
 
 
